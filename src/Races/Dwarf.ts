@@ -24,11 +24,11 @@ class Dwarf extends Race {
   // }
 }
 
-// const dwarf1 = new Dwarf('Felipe', 80, 80);
-// const dwarf2 = new Dwarf('Felipeeeee', 5580, 850);
+// const dwarf1 = new Dwarf('Felipe', 80);
+// const dwarf2 = new Dwarf('Felipeeeee', 5580);
 
-// console.log(dwarf1.dexterity);
-// console.log(dwarf1.maxLifePoints);
+// console.log(dwarf1.);
+console.log(Dwarf.createdRacesInstances());
 
 // console.log(dwarf2.dexterity);
 // console.log(dwarf2.maxLifePoints);

@@ -19,4 +19,6 @@ class Elf extends Race {
   }
 }
 
+// const elf1 = new Elf();
+
 export default Elf;

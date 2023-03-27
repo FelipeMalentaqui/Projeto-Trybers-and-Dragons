@@ -22,6 +22,4 @@ abstract class Race {
   abstract get maxLifePoints():number;
 }
 
-// const nome1 = new Race('Felipe', 80);
-
 export default Race;
