@@ -72,9 +72,9 @@ class Character implements Fighter {
     return this._lifePoints;
   }
 
-  attack(enemy: Fighter): void {
-    enemy
-  }
+  // attack(enemy: Fighter): void {
+  //   enemy
+  // }
 
   levelUp(): void {
     this._maxLifePoints += getRandomInt(1, 10);
