@@ -33,7 +33,7 @@ class Character implements Fighter {
     return this._race;
   }
 
-  get archettype(): Archetype {
+  get archetype(): Archetype {
     return this._archetype;
   }
 
@@ -63,18 +63,18 @@ class Character implements Fighter {
   receiveDamage(attackPoint: number): number {
     const damage = attackPoint - this.defense;
 
-    if (damage > 0) return this._lifePoints - damage;
+    if (damage > 0) this._lifePoints -= damage;
     
-    if (damage <= 0) return this._lifePoints -= 1;
+    if (damage <= 0) this._lifePoints -= 1;
 
-    if (this._lifePoints <= 0) return this._lifePoints = -1;
+    if (this._lifePoints <= 0) this._lifePoints = -1;
 
     return this._lifePoints;
   }
 
-  // attack(enemy: Fighter): void {
-  //   enemy
-  // }
+  attack(enemy: Fighter): void {
+    enemy.receiveDamage(this._strength);
+  }
 
   levelUp(): void {
     this._maxLifePoints += getRandomInt(1, 10);

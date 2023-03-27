@@ -9,7 +9,6 @@ class Mage extends Archetype {
     super(name);
     this._energyType = 'mana';
     Mage._quantity += 1;
-    // console.log(Mage._quantity);
   }
 
   static createdArchetypeInstances(): number {
@@ -20,11 +19,4 @@ class Mage extends Archetype {
     return this._energyType;
   }
 }
-
-// const mage1 = new Mage('Felipe');
-// const mage2 = new Mage('Malentaqui');
-
-// console.log(mage2);
-// console.log(mage1);
-
 export default Mage;
